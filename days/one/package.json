@@ -1,0 +1,15 @@
+{
+  "name": "one",
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "rome": "^10.0.1"
+  },
+  "scripts": {
+    "1": "rome ci 1.ts && ts-node 1.ts",
+    "2": "rome ci 2.ts && ts-node 2.ts"
+  }
+}

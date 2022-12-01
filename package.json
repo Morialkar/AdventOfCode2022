@@ -1,0 +1,10 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "author": "Morialkar <philippe@morialkar.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.3.0",
+  "workspaces": [
+    "days/*"
+  ]
+}

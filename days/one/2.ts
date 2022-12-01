@@ -3,27 +3,9 @@ import { one } from "./1";
 export const two = () => {
 	const elves = one();
 
-	const firstMax = findHigest(elves);
+	elves.sort().reverse();
 
-	elves.splice(firstMax.index, 1);
-
-	const secondMax = findHigest(elves);
-
-	elves.splice(secondMax.index, 1);
-
-	const thirdMax = findHigest(elves);
-
-	return firstMax.val + secondMax.val + thirdMax.val;
-};
-
-const findHigest = (inputArray: number[]) => {
-	let max = { val: inputArray[0], index: 0 };
-	for (let i = 1; i < inputArray.length; ++i) {
-		if (inputArray[i] > max.val) {
-			max = { val: inputArray[i], index: i };
-		}
-	}
-	return max;
+	return elves[0] + elves[1] + elves[2];
 };
 
 console.log("Answer to Part Two: ", two());

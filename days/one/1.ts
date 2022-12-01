@@ -8,12 +8,12 @@ export const one = () => {
 	let currentElf = 0;
 
 	for (let i = 0; i < inputValues.length; i++) {
-		if (inputValues.at(i) === "") {
+		if (inputValues[i] === "") {
 			currentElf++;
 			elves[currentElf] = 0;
 			continue; // Create next elf and skip over;
 		}
-		elves[currentElf] += parseInt(inputValues.at(i) ?? "0", 10);
+		elves[currentElf] += parseInt(inputValues[i] ?? "0", 10);
 	}
 
 	return elves;

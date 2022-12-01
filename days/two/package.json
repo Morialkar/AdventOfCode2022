@@ -1,0 +1,12 @@
+{
+  "name": "two",
+  "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "@prettier/plugin-ruby": "^3.2.2",
+    "prettier": "^2.8.0"
+  },
+  "scripts": {
+    "1": "prettier --write \"**/*.rb\" && ruby 1.rb",
+    "2": "prettier --write \"**/*.rb\" && ruby 2.rb"
+  }
+}

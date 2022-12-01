@@ -18,13 +18,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "one",\
         "reference": "workspace:days/one"\
+      },\
+      {\
+        "name": "two",\
+        "reference": "workspace:days/two"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["adventofcode", ["workspace:."]],\
-      ["one", ["workspace:days/one"]]\
+      ["one", ["workspace:days/one"]],\
+      ["two", ["workspace:days/two"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -35,6 +40,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@prettier/plugin-ruby", [\
+        ["npm:3.2.2", {\
+          "packageLocation": "./.yarn/cache/@prettier-plugin-ruby-npm-3.2.2-e150d37146-b77de48e58.zip/node_modules/@prettier/plugin-ruby/",\
+          "packageDependencies": [\
+            ["@prettier/plugin-ruby", "npm:3.2.2"],\
+            ["prettier", "npm:2.8.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@rometools/cli-darwin-arm64", [\
@@ -121,6 +136,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["prettier", [\
+        ["npm:2.8.0", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.0-746e3df53e-72004ce0cc.zip/node_modules/prettier/",\
+          "packageDependencies": [\
+            ["prettier", "npm:2.8.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["rome", [\
         ["npm:10.0.1", {\
           "packageLocation": "./.yarn/unplugged/rome-npm-10.0.1-1a07b415e7/node_modules/rome/",\
@@ -134,6 +158,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rometools/cli-win32-x64", "npm:10.0.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["two", [\
+        ["workspace:days/two", {\
+          "packageLocation": "./days/two/",\
+          "packageDependencies": [\
+            ["two", "workspace:days/two"],\
+            ["@prettier/plugin-ruby", "npm:3.2.2"],\
+            ["prettier", "npm:2.8.0"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["typescript", [\

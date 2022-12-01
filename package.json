@@ -4,6 +4,10 @@
   "author": "Morialkar <philippe@morialkar.com>",
   "license": "MIT",
   "packageManager": "yarn@3.3.0",
+  "scripts": {
+    "one": "yarn workspace one 2",
+    "two": "yarn workspace two 2"
+  },
   "workspaces": [
     "days/*"
   ]

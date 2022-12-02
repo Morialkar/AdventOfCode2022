@@ -27,6 +27,9 @@ This will allow Prettier Ruby to work with the project.
 
 ## Day 3: Python
 
+To run Day 3, you will need to install Python 3.7+ and the Black module.
+
+`pip install black`
 
 ## Day 4: PHP
 

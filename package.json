@@ -5,9 +5,9 @@
   "license": "MIT",
   "packageManager": "yarn@3.3.0",
   "scripts": {
-    "one": "yarn workspace one 2",
-    "two": "yarn workspace two 2",
-    "three": "yarn workspace three 2"
+    "1": "yarn workspace one 2",
+    "2": "yarn workspace two 2",
+    "3": "yarn workspace three 2"
   },
   "workspaces": [
     "days/*"

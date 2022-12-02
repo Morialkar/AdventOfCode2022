@@ -20,6 +20,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:days/one"\
       },\
       {\
+        "name": "three",\
+        "reference": "workspace:days/three"\
+      },\
+      {\
         "name": "two",\
         "reference": "workspace:days/two"\
       }\
@@ -29,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["adventofcode", ["workspace:."]],\
       ["one", ["workspace:days/one"]],\
+      ["three", ["workspace:days/three"]],\
       ["two", ["workspace:days/two"]]\
     ],\
     "fallbackPool": [\
@@ -158,6 +163,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rometools/cli-win32-x64", "npm:10.0.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["three", [\
+        ["workspace:days/three", {\
+          "packageLocation": "./days/three/",\
+          "packageDependencies": [\
+            ["three", "workspace:days/three"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["two", [\

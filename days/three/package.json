@@ -1,0 +1,8 @@
+{
+  "name": "three",
+  "packageManager": "yarn@3.3.0",
+  "scripts": {
+    "1": "black ./*.py && python 1.py",
+    "2": "black ./*.py && python 2.py"
+  }
+}

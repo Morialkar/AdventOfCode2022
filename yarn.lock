@@ -117,6 +117,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"three@workspace:days/three":
+  version: 0.0.0-use.local
+  resolution: "three@workspace:days/three"
+  languageName: unknown
+  linkType: soft
+
 "two@workspace:days/two":
   version: 0.0.0-use.local
   resolution: "two@workspace:days/two"

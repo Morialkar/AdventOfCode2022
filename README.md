@@ -79,7 +79,7 @@ This will allow Prettier Ruby to work with the project.
 ## Day 20: Java
 
 
-## Day 21: F#
+## Day 21: Q#
 
 
 ## Day 22: Elixir
